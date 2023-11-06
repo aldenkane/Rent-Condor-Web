@@ -7,14 +7,14 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/rent-condor-favicon.svg" />
+  
+  <!--<link rel="shortcut icon" type="image/x-icon" href="assets/images/rent-condor-favicon.svg" />-->
 
   <!--====== Title ======-->
   <title>Find San Diego's Best Rentals</title>
 
   <!--====== Favicon Icon ======-->
-  <link rel="shortcut icon" href="../assets/images/rent-condor-favicon.svg" type="image/svg" />
+  <!--<link rel="shortcut icon" href="../assets/images/rent-condor-favicon.svg" type="image/svg" />-->
 
   <!--====== Bootstrap css ======-->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -29,6 +29,8 @@
   <link rel="stylesheet" href="assets/css/glightbox.min.css" />
 
   <link rel="stylesheet" href="style.css" />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <!-- Google Analytics Block-->
@@ -44,6 +46,8 @@
 
 <body>
 
+<!-- ========================= map-section end ========================= -->
+
   <!--====== NAVBAR NINE PART START ======-->
 
   <section class="navbar-area navbar-nine" id = "taskbar">
@@ -52,7 +56,7 @@
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="index.html">
-              <img class="rentcondor-logo" src="assets/images/rent-condor-logo-header-white.svg" alt="Logo" />
+              <!--<img class="rentcondor-logo" src="assets/images/rent-condor-logo-header-white.svg" alt="Logo" />-->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
               aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,7 +104,7 @@
     </div>
     <div class="sidebar-content">
       <div class="sidebar-logo">
-        <a href="index.html"><img src="assets/images/rent-condor-logo-header-black.svg" alt="Logo" /></a>
+        <!--<a href="index.html"><img src="assets/images/rent-condor-logo-header-black.svg" alt="Logo" /></a>-->
       </div>
       <!-- <p class="text">Lorem ipsum dolor sit amet adipisicing elit. Sapiente fuga nisi rerum iusto intro.</p> -->
       <!-- logo -->
@@ -165,7 +169,8 @@
         </div>
         <div class="col-lg-6 col-md-12 col-12">
           <div class="header-image">
-            <img src="assets/images/header/header-img-1.jpg" alt="#" />
+                          <div id='map' style='width: 633px; height: 500px;'></div> 
+            
           </div>
         </div>
       </div>
@@ -524,16 +529,7 @@
   </section>
   <!-- ========================= contact-section end ========================= -->
 
-  <!-- ========================= map-section end ========================= -->
-  <section class="map-section map-style-9">
-    <div class="map-container">
-      <object style="border:0; height: 500px; width: 100%;"
-        data="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3353.846317456859!2d-117.25925032435683!3d32.79633397365568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1691511566610!5m2!1sen!2sus"></object>
-    </div>
-    </div>
-  </section>
-  <!-- ========================= map-section end ========================= -->
-
+  
   <!-- Start Footer Area -->
   <footer class="footer-area footer-eleven">
     <!-- Start Footer Top -->
@@ -546,7 +542,7 @@
               <div class="footer-widget f-about">
                 <div class="logo">
                   <a href="index.html">
-                    <img src="assets/images/rent-condor-logo-header-black.svg" alt="#" class="img-fluid rentcondor-logo-footer" />
+                    <!--<img src="assets/images/rent-condor-logo-header-black.svg" alt="#" class="img-fluid rentcondor-logo-footer" />-->
                   </a>
                 </div>
                 <p style="color:black">Helping you find home...</p>
@@ -607,10 +603,13 @@
   </a>
 
   <!--====== js ======-->
+ 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/glightbox.min.js"></script>
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js" type = "module" defer></script>
   <script src="assets/js/tiny-slider.js"></script>
+  
+
 
   <script>
 
