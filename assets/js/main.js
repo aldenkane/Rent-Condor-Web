@@ -65,7 +65,11 @@
       zoom: 10,
     });
 
-    let data = fetchData().then((data) => addPoints(data, map)); //returns a promise object & Address Data
+    // Wait for the map to load before adding points
+    map.on("load", function () {
+      // Now it's safe to call addPoints
+      fetchData().then((data) => addPoints(data, map)); //returns a promise object & Address Data
+    });
 
     // Create a popup but don't add it to the map yet
     const popup = new mapboxgl.Popup({
