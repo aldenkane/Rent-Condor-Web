@@ -25,18 +25,12 @@
     Get Current Position
     ======================================= */
 
-  const defaultCoords = [-117.2537344, 32.7712768]; //longitude, latitude
-
-  /*=====================================
-Connecting to PSCALE Database
-    ======================================= */
-
-  /*=====================================
-Close of Connecting to PSCALE Database
-    ======================================= */
+  const defaultCoords = [-117.253, 32.771]; //longitude, latitude
 
   mapboxgl.accessToken =
     "pk.eyJ1Ijoic3RldmVvaGFuZXNpYW4iLCJhIjoiY2xuam5lbXN4MGNtMTJ0cG1naHFlcGpiayJ9.grLFPTnEokYgXWfy_T4Ddg";
+
+  //Geolocation position tracking dependence for website. --- Commented out for initial speed development, can be added later
 
   // if ("geolocation" in navigator) {
   //   navigator.geolocation.getCurrentPosition(
@@ -58,7 +52,7 @@ Close of Connecting to PSCALE Database
   //   );
   // } else {
   // Geolocation is not supported by the browser
-  initMap(defaultCoords);
+
   // }
   /*=====================================
    Map functions
@@ -276,6 +270,6 @@ Close of Connecting to PSCALE Database
       });
     });
   });
-
+  initMap(defaultCoords);
   ("use strict");
 })();
